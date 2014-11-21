@@ -29,6 +29,7 @@
 - 樣本中有四位民進黨候選人採用了與無黨籍臺北市長候選人柯文哲相同的藍綠色(Tiffany blue)
 - 用色的深淺(深藍、深綠、淺藍、淺綠)與候選人的得票率將會是日後感興趣的研究目標
 
+Contributors: Johnson, CK, Rafe and Crystal
 原始資料: candidate.csv  
 分析程式: extract-main-colors.R, adjust-colors.R  
 原始碼：gpl v2; 視覺呈現: CC-BY-NC 4.0  
