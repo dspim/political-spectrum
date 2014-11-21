@@ -1,5 +1,6 @@
 # 處理 2010 台北市議員得票明細 資料
-tmp2010 <- read.csv("2010台北市議員選舉得票明細.csv", encoding="big5", stringsAsFactors=FALSE)
+f <- file("vote-2010.csv", encoding = "big5")
+tmp2010 <- read.csv(f, stringsAsFactors=FALSE)
 tmp2010$推薦政黨 <- sub("民主進步黨","民進黨", tmp2010$推薦政黨)
 tmp2010$推薦政黨 <- sub("中國國民黨","國民黨", tmp2010$推薦政黨)
 tmp2010$推薦政黨 <- sub("無黨籍及未經政黨推薦","無", tmp2010$推薦政黨)
@@ -9,7 +10,8 @@ dat2010$得票率 <- as.numeric(sub("%","",dat2010$得票率))
 
 
 # 匯入 2014 台北市議員候選人資料
-dat2014 <- read.csv("台北市議員候選人資料.csv", encoding="big5", stringsAsFactors=FALSE)
+f <- file("candidate.csv", encoding = "big5")
+dat2014 <- read.csv(f, stringsAsFactors=FALSE)
 
 # 加入 候選人文宣對應的色碼資訊
 library(jpeg)

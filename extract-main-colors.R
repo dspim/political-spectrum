@@ -10,8 +10,8 @@ Div <- function(x, k){
   exp(sum(-p*log(p)))/k
 }
 
-
-dat <- read.csv("台北市議員候選人資.csv", encoding="big5", stringsAsFactors=FALSE)
+f <- file("candidate.csv", encoding = "big5")
+dat <- read.csv(f, stringsAsFactors=FALSE)
 head(dat)
 dat.dpp <- subset(dat, 推薦之政黨=="民主進步黨")
 dat.kmt <- subset(dat, 推薦之政黨=="中國國民黨")

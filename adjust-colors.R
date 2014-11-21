@@ -1,6 +1,6 @@
 library(jpeg)
-
-dat <- read.csv("political-spectrum/台北市議員候選人資料.csv", encoding="big5", stringsAsFactors=FALSE)
+f <- file("candidate.csv", encoding = "big5")
+dat <- read.csv(f, stringsAsFactors=FALSE)
 head(dat)
 dat.dpp <- subset(dat, 推薦之政黨=="民進黨")
 dat.kmt <- subset(dat, 推薦之政黨=="國民黨")
