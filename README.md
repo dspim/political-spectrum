@@ -1,7 +1,7 @@
 政治色彩學分析—以2014台北市議員競選為例
 =======
 
-<img src="output/all-color-2-tag3.png" alt="政治色彩學分析" width="500" />
+<img src="output/all-color-2-tag3.png" alt="政治色彩學分析" width="700" />
 
 本分析為 [DSP](http://dsp.im) 所發起的mini project，並刊載於 [50 天 50 張選舉圖表](https://www.facebook.com/50d50v)。
 
